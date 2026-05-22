@@ -1,0 +1,170 @@
+/* Variáveis de Cores */
+:root {
+    --primary-blue: #003399;
+    --secondary-blue: #4A90E2;
+    --background-light: #f4f7f6;
+    --text-dark: #333;
+    --white: #ffffff;
+    --border-color: #ccc;
+}
+
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Banner Promocional */
+.banner-section {
+    width: 100%;
+    background-color: var(--primary-blue);
+    text-align: center;
+}
+
+.banner-section img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Formulário */
+.form-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-container h1 {
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.form-container p.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-blue);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 5px rgba(0, 51, 153, 0.2);
+}
+
+/* Botão de Envio */
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #002266;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Rodapé Ajustado (Sem Imagem) */
+footer {
+    background-color: #1a1a1a;
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+footer .footer-slogan {
+    font-weight: bold;
+    color: var(--secondary-blue);
+}
+
+/* Responsividade - Ajustes para o Celular */
+@media (max-width: 600px) {
+    .banner-section img {
+        height: auto; 
+        width: 100%; 
+        display: block; 
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-container {
+        padding: 25px 15px; 
+    }
+
+    .form-container h1 {
+        font-size: 24px; 
+    }
+}

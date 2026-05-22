@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula - Grupo Educacional Monark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="banner-section">
+        <img src="C1D93CAD-B773-44F8-8BB2-6CFD8EF1400D.PNG" alt="Banner Pós-Graduação EAD">
+    </section>
+
+    <main class="container">
+        <div class="form-container">
+            <h1>Ficha de Matrícula Online</h1>
+            <p class="subtitle">Preencha os seus dados abaixo para iniciar a sua jornada educacional.</p>
+
+            <form id="matriculaForm" action="https://formsubmit.co/lilianjarina8@gmail.com" method="POST">
+                
+                <input type="hidden" name="_subject" value="🎉 Nova Ficha de Matrícula - Site Monark!">
+                
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="Nome" required placeholder="Digite o seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="nome">Sobrenome *</label>
+                    <input type="text" id="nome" name="Sobrenome" required placeholder="Digite o seu Sobrenome">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cpf">CPF *</label>
+                        <input type="text" id="cpf" name="CPF" required placeholder="000.000.000-00" maxlength="14">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de Nascimento *</label>
+                        <input type="date" id="dataNascimento" name="Data de Nascimento" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="Email" required placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">WhatsApp / Telemóvel *</label>
+                        <input type="tel" id="telefone" name="Telefone" required placeholder="(00) 00000-0000" maxlength="15">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Selecione o Curso (Pós-Graduação EAD) *</label>
+                    <select id="curso" name="Curso Escolhido" required>
+                        <option value="" disabled selected>Escolha uma opção...</option>
+                        <option value="MBA em Gestão Empresarial">MBA em Gestão Empresarial</option>
+                        <option value="MBA em Gestão de Pessoas">MBA em Gestão de Pessoas</option>
+                        <option value="Especialização em Marketing Digital">Especialização em Marketing Digital</option>
+                        <option value="Especialização em Educação Inclusiva">Especialização em Educação Inclusiva</option>
+                        <option value="Especialização em Direito do Trabalho">Especialização em Direito do Trabalho</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Finalizar Matrícula</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Grupo Educacional Monark. Todos os direitos reservados.</p>
+        <p class="footer-slogan">Qualificação reconhecida para transformar o seu futuro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
